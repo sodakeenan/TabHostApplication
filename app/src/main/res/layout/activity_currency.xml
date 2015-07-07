@@ -1,0 +1,214 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.tabhostapplication.CurrencyActivity">
+
+    <LinearLayout
+        android:padding="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <!--  1st row wrapper  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <!-- block 1  -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="$"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/dollarsEditBox"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:text="32423423"
+                    android:gravity="center"  />
+
+            </LinearLayout>
+
+            <!-- block 2  -->
+            <LinearLayout
+                android:minWidth="120dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp">
+
+                <TextView
+                    android:text="грн"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/usdToUahView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:text="234242"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <!--
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    /> -->
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--  2nd row wrapper  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <!-- block 1  -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="€"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/eurosEditBox"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:text="987" />
+
+            </LinearLayout>
+
+            <!-- block 2  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp">
+
+                <TextView
+                    android:text="грн"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/eurosToUahView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:text="234242"
+                    android:layout_marginTop="8dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--  3rd row wrapper  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <!-- block 1  -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="грн"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/uahEditBox"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:text="111" />
+
+            </LinearLayout>
+
+            <!-- block 2  -->
+            <LinearLayout
+                android:minWidth="120dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp">
+
+                <TextView
+                    android:text="£"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/uahToPoundsView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:text="234242"
+                    android:layout_marginTop="8dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Обчислити"
+            android:onClick="computeCurrencyOnClick" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,214 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.tabhostapplication.TimeActivity">
+
+    <LinearLayout
+        android:padding="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <!--  1st row wrapper  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <!-- block 1  -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Доба"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/daysEditBox"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <!-- block 2  -->
+            <LinearLayout
+                android:minWidth="120dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp">
+
+                <TextView
+                    android:text="Години"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/hoursView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:text="234242"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <!--
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    />
+                    -->
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--  2nd row wrapper  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <!-- block 1  -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Години"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/hoursEditBox"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <!-- block 2  -->
+            <LinearLayout
+                android:minWidth="120dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp">
+
+                <TextView
+                    android:text="Хвилини"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/minutesView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:text="234242"
+                    android:layout_marginTop="8dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--  3rd row wrapper  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <!-- block 1  -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Хвилини"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/minutesEditBox"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"  />
+
+            </LinearLayout>
+
+            <!-- block 2  -->
+            <LinearLayout
+                android:minWidth="120dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp">
+
+                <TextView
+                    android:text="Секунди"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/secondsView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:text="234242"
+                    android:layout_marginTop="8dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Обчислити"
+            android:onClick="comupteTimeOnClick"/>
+    </LinearLayout>
+
+</FrameLayout>
